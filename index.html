@@ -3,47 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CV of Dinu Bogdan-Marius - Computer Science Student and Junior Software Developer">
+    <meta name="description" content="CV of Dinu Bogdan-Marius">
     <title>CV - Bogdan Dinu</title>
-    <link rel="stylesheet" href="style.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    </head>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+        
+        body {
+            font-family: 'Lora', serif;
+            background-color: #FFFFFF;
+            color: #333333;
+            line-height: 1.5;
+            font-size: 16px;
+            margin: 0; 
+        }
+
+        .resume-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 2px solid #EEEEEE;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            font-weight: 600;
+            margin: 0;
+            color: #000000;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 0.95em;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .contact-info a {
+            color: #0073b1;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            font-size: 1.6em;
+            font-weight: 500;
+            color: #0073b1;
+            border-bottom: 2px solid #0073b1;
+            padding-bottom: 5px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        .summary p {
+            font-size: 1.05em;
+            color: #444;
+            margin-top: 0;
+        }
+
+        .job {
+            margin-bottom: 20px;
+            overflow: hidden;
+            page-break-inside: avoid; 
+        }
+
+        .date {
+            float: right;
+            font-weight: 500;
+            color: #555;
+            font-style: italic;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            font-weight: 600;
+            margin: 0 0 5px 0;
+        }
+
+        h3 strong {
+            font-weight: 500;
+            color: #333;
+        }
+
+        h3 a {
+            font-size: 0.9em;
+            font-weight: 500;
+            color: #0073b1;
+            text-decoration: none;
+            vertical-align: middle;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+            color: #444;
+        }
+
+        p {
+            margin: 0 0 10px 0;
+            color: #444;
+        }
+
+        .download-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #0073b1;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 16px;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: background 0.3s, transform 0.2s;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .download-btn:hover {
+            background-color: #005f93;
+            transform: translateY(-2px);
+        }
+
+        @media print {
+            .download-btn {
+                display: none !important;
+            }
+
+            @page {
+                margin: 1cm;
+                size: A4;
+            }
+
+            body {
+                background-color: white;
+                -webkit-print-color-adjust: exact; 
+                print-color-adjust: exact;
+            }
+
+            .resume-container {
+                width: 100%;
+                max-width: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            a {
+                text-decoration: none !important;
+                color: #0073b1 !important;
+            }
+        }
+    </style>
+</head>
 <body>
-<div class="resume-container">
 
-    <header>
-        <h1>Bogdan Dinu</h1>
-        <div class="contact-info">
-            <p><i class="fas fa-phone"></i> +40 763 378 294</p>
-            <p><i class="fas fa-envelope"></i> <a href="mailto:bogdandinu625@gmail.com">bogdandinu625@gmail.com</a></p>
-            <p><i class="fab fa-github"></i> <a href="https://github.com/dbogdanm" target="_blank">github.com/dbogdanm</a></p>
-        </div>
-    </header>
+    <button class="download-btn" onclick="window.print()">
+        <i class="fas fa-file-pdf"></i> Descarcă PDF
+    </button>
 
-    <section class="summary">
-        <h2>Professional Summary</h2>
-        <p>
-            Motivated Computer Science student (3/4 year) with a strong foundation in <strong>C++, Python, and Embedded Systems</strong>. Passionate about building practical solutions, ranging from AI-driven data analysis tools to complex hardware integrations. I combine academic rigor with distinct adaptability and process management skills gained through varied professional experiences. Eager to contribute to an engineering team solving real-world technical challenges.
-        </p>
-    </section>
-    
-    <section class="education">
-        <h2>Education</h2>
-
-        <div class="job">
-            <div class="job-header">
-                <h3>University of Bucharest</h3>
-                <span class="date">Oct 2023 - 2027(expected)</span>
+    <div class="resume-container">
+        <header>
+            <h1>Bogdan Dinu</h1>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> +40 763 378 294</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:bogdandinu625@gmail.com">bogdandinu625@gmail.com</a></p>
+                <p><i class="fab fa-github"></i> <a href="https://github.com/dbogdanm" target="_blank">github.com/dbogdanm</a></p>
             </div>
-            <p><strong>B.Sc. in Computer Science</strong> | Faculty of Mathematics and Computer Science</p>
-            <p class="details">Focus: Data Structures, Algorithms, OOP, Operating Systems, Artificial Intelligence, Completed CCNA 1 & 2 curriculum</p>
-        </div>
+        </header>
 
-    </section>
-    
-    <section class="skills">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
+        <section class="summary">
+            <h2>Professional Summary</h2>
+            <p>
+                Motivated Computer Science student (3/4 year) with a strong foundation in <strong>C++, Python, and Embedded Systems</strong>. Passionate about building practical solutions, ranging from AI-driven data analysis tools to complex hardware integrations. I combine academic rigor with distinct adaptability and process management skills gained through varied professional experiences. Eager to contribute to an engineering team solving real-world technical challenges.
+            </p>
+        </section>
+        
+        <section class="education">
+            <h2>Education</h2>
+            <div class="job">
+                <span class="date">Oct 2023 - 2027(expected)</span>
+                <h3>University of Bucharest</h3>
+                <p><strong>B.Sc. in Computer Science</strong> | Faculty of Mathematics and Computer Science</p>
+                <p style="font-style: italic;">Focus: Data Structures, Algorithms, OOP, Operating Systems, Artificial Intelligence, Completed CCNA 1 & 2 curriculum</p>
+            </div>
+        </section>
+        
+        <section class="skills">
+            <h2>Technical Skills</h2>
             <ul>
                 <li><strong>Languages:</strong> C/C++, Python, SQL, HTML5/CSS3</li>
                 <li><strong>Frameworks & Libraries:</strong> QT Framework, Flask, TensorFlow, Keras, Scikit-learn, Arduino SDK</li>
@@ -51,93 +223,76 @@
                 <li><strong>Core Concepts:</strong> OOP, Data Structures, Embedded Systems, REST APIs, CI/CD Basics, Networking (TCP/IP, OSI Model, Subnetting)</li>
                 <li><strong>Languages:</strong> Romanian (Native), English (B1/B2 - Independent User), Elementary French</li>
             </ul>
-        </div>
-    </section>
+        </section>
 
-    <section class="projects">
-        <h2>Key Technical Projects</h2>
+        <section class="projects">
+            <h2>Key Technical Projects</h2>
 
-        <div class="job">
-            <h3>Introduction to Robotics Repository <span class="repo-tag">(Embedded C++)</span></h3>
-            <p>
-                Developed a progressive portfolio of embedded systems projects using <strong>C++ and Arduino</strong>, ranging from analog signal processing and PWM control to complex applications involving <strong>Finite State Machines</strong>, hardware interrupts, and sensor integration (Ultrasonic/LDR). The repository culminates in the engineering of optimized interactive games including a shift-register-driven "Simon Says" and an LCD platformer demonstrating advanced techniques such as non-blocking multiplexing, differential rendering, and Clean Architecture principles.
-            </p>
-            <p class="tech-stack"><strong>Tech:</strong> C++, Arduino Uno, Circuit Design, Interrupts, I2C/SPI/Serial Communication</p>
-        </div>
+            <div class="job">
+                <h3>Introduction to Robotics Repository <strong>(Embedded C++)</strong></h3>
+                <p>
+                    Developed a progressive portfolio of embedded systems projects using <strong>C++ and Arduino</strong>, ranging from analog signal processing and PWM control to complex applications involving <strong>Finite State Machines</strong>, hardware interrupts, and sensor integration.
+                </p>
+                <p><strong>Tech:</strong> C++, Arduino Uno, Circuit Design, Interrupts, I2C/SPI/Serial Communication</p>
+            </div>
 
-        <div class="job">
-            <h3>Malware Classification CNN <span class="repo-tag">(Python & AI)</span> - <a href="https://github.com/dbogdanm/MalwareClassification" target="_blank">GitHub</a></h3>
-            <p>
-                Engineered a cybersecurity tool that converts raw hexadecimal <code>.bytes</code> files into image representations to detect malware patterns. Trained a Convolutional Neural Network (CNN) achieving <strong>~92% accuracy</strong> across 22 malware families, implementing class weights to handle dataset imbalance.
-            </p>
-            <p class="tech-stack"><strong>Tech:</strong> Python, TensorFlow, Keras, Scikit-learn, Image Processing</p>
-        </div>
+            <div class="job">
+                <h3>Malware Classification CNN <strong>(Python & AI)</strong> - <a href="https://github.com/dbogdanm/MalwareClassification" target="_blank">GitHub</a></h3>
+                <p>
+                    Engineered a cybersecurity tool that converts raw hexadecimal <code>.bytes</code> files into image representations to detect malware patterns. Trained a CNN achieving <strong>~92% accuracy</strong>.
+                </p>
+                <p><strong>Tech:</strong> Python, TensorFlow, Keras, Scikit-learn, Image Processing</p>
+            </div>
 
-        <div class="job">
-            <h3>MarketSentiment Analyzer <span class="repo-tag">(Cloud & Web)</span> - <a href="https://github.com/dbogdanm/MarketSentiment" target="_blank">GitHub</a></h3>
-            <p>
-                Built a full-stack automated analysis tool that aggregates financial news from 15 sources. Integrated the <strong>DeepSeek R1 AI model</strong> hosted on Azure to perform sentiment analysis and correlated results with Fear & Greed and VIX indexes, storing data in a PostgreSQL database.
-            </p>
-            <p class="tech-stack"><strong>Tech:</strong> Python, Flask, Azure Cloud, PostgreSQL, LLM Integration</p>
-        </div>
+            <div class="job">
+                <h3>MarketSentiment Analyzer <strong>(Cloud & Web)</strong> - <a href="https://github.com/dbogdanm/MarketSentiment" target="_blank">GitHub</a></h3>
+                <p>
+                    Built a full-stack automated analysis tool that aggregates financial news. Integrated the <strong>DeepSeek R1 AI model</strong> hosted on Azure to perform sentiment analysis.
+                </p>
+                <p><strong>Tech:</strong> Python, Flask, Azure Cloud, PostgreSQL, LLM Integration</p>
+            </div>
 
-        <div class="job">
-            <h3>FleetManagement System <span class="repo-tag">(C++ OOP)</span> - <a href="https://github.com/dbogdanm/QT-OOP" target="_blank">GitHub</a></h3>
-            <p>
-                Designed a desktop application for logistics management using the QT Framework. The project emphasizes strict <strong>Object-Oriented Programming (OOP)</strong> principles, modular architecture, and an intuitive GUI for managing vehicle fleets.
-            </p>
-            <p class="tech-stack"><strong>Tech:</strong> C++, QT Framework, GUI Design</p>
-        </div>
+            <div class="job">
+                <h3>FleetManagement System <strong>(C++ OOP)</strong> - <a href="https://github.com/dbogdanm/QT-OOP" target="_blank">GitHub</a></h3>
+                <p>
+                    Designed a desktop application for logistics management using the QT Framework. The project emphasizes strict <strong>OOP</strong> principles.
+                </p>
+                <p><strong>Tech:</strong> C++, QT Framework, GUI Design</p>
+            </div>
+        </section>
 
-        <div class="job">
-            <h3>AutoNet Portfolio <span class="repo-tag">(Frontend)</span> - <a href="https://github.com/dbogdanm/AutoNet-Website" target="_blank">GitHub</a></h3>
-            <p>
-                Developed a responsive web showcase for luxury automobiles featuring modern CSS grid layouts and DOM manipulation for dynamic content rendering.
-            </p>
-            <p class="tech-stack"><strong>Tech:</strong> JavaScript, CSS3, HTML5</p>
-        </div>
-    </section>
+        <section class="work-experience">
+            <h2>Professional Experience & Volunteering</h2>
 
-    <section class="work-experience">
-        <h2>Professional Experience & Volunteering</h2>
-
-        <div class="job">
-            <div class="job-header">
-                <h3>Administrative Assistant / Procurement Support</h3>
+            <div class="job">
                 <span class="date">Nov 2023 - June 2024</span>
+                <h3>Administrative Assistant</h3>
+                <p><strong>MAGIC HEATING SYSTEM SRL</strong></p>
+                <ul>
+                    <li>Managed public acquisition plans and legal procurement procedures.</li>
+                    <li>Handled documentation for EU-funded projects (POCU measure 5.1).</li>
+                </ul>
             </div>
-            <p><strong>MAGIC HEATING SYSTEM SRL</strong></p>
-            <ul>
-                <li>Managed public acquisition plans and legal procurement procedures, ensuring strict compliance with regulations.</li>
-                <li>Handled documentation and reporting for EU-funded projects (POCU measure 5.1), demonstrating attention to detail and process optimization skills relevant to software QA and deployment.</li>
-            </ul>
-        </div>
 
-        <div class="job">
-            <div class="job-header">
-                <h3>Operations Support</h3>
+            <div class="job">
                 <span class="date">Dec 2022 - Sept 2023</span>
+                <h3>Operations Support</h3>
+                <p><strong>NEW DIAMOND ROAD SERVICE SRL</strong></p>
+                <ul>
+                    <li>Assisted in the operational setup and procurement planning.</li>
+                </ul>
             </div>
-            <p><strong>NEW DIAMOND ROAD SERVICE SRL</strong></p>
-            <ul>
-                <li>Assisted in the operational setup and procurement planning for a commercial facility.</li>
-                <li>Monitored project implementation milestones for POCU funding (measure 4.16).</li>
-            </ul>
-        </div>
-
-        <div class="job">
-            <div class="job-header">
-                <h3>Project Volunteer</h3>
+            
+             <div class="job">
                 <span class="date">2020 - 2022</span>
+                <h3>Project Volunteer</h3>
+                <p><strong>FORTES</strong></p>
+                <ul>
+                    <li>Supported the implementation of youth projects and EU-funded initiatives.</li>
+                </ul>
             </div>
-            <p><strong>FORTES (Federation of Ramnic Youth Organizations)</strong></p>
-            <ul>
-                <li>Supported the implementation of youth projects and EU-funded initiatives (POCU SMIS 128000).</li>
-                <li>Developed teamwork and leadership skills in a collaborative environment.</li>
-            </ul>
-        </div>
-    </section>
+        </section>
 
-</div> 
+    </div>
 </body>
 </html>
