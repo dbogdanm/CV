@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 body {
     font-family: 'Lora', serif;
-    /* Restul proprietăților rămân la fel */
     background-color: #FFFFFF;
     color: #333333;
     line-height: 1.5;
@@ -113,4 +112,5 @@ li {
 p {
     margin: 0 0 10px 0;
     color: #444;
+
 }
