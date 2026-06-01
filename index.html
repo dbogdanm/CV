@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="CV of Dinu Bogdan-Marius">
     <title>CV - Bogdan Dinu</title>
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-        
+
         body {
             font-family: 'Lora', serif;
             background-color: #FFFFFF;
             color: #333333;
             line-height: 1.5;
             font-size: 16px;
-            margin: 0; 
+            margin: 0;
         }
 
         .resume-container {
@@ -82,7 +82,7 @@
         .job {
             margin-bottom: 20px;
             overflow: hidden;
-            page-break-inside: avoid; 
+            page-break-inside: avoid;
         }
 
         .date {
@@ -108,6 +108,14 @@
             font-weight: 500;
             color: #0073b1;
             text-decoration: none;
+            vertical-align: middle;
+        }
+
+        .private-tag {
+            font-size: 0.85em;
+            font-weight: 500;
+            color: #888;
+            font-style: italic;
             vertical-align: middle;
         }
 
@@ -163,7 +171,7 @@
 
             body {
                 background-color: white;
-                -webkit-print-color-adjust: exact; 
+                -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
             }
 
@@ -200,17 +208,16 @@
         <section class="summary">
             <h2>Professional Summary</h2>
             <p>
-Motivated Computer Science student (3/4 year) with a strong foundation in 
-<strong>Python, C++, and AI Systems</strong>. Passionate about 
-<strong>DevOps practices</strong> and the operationalization of machine learning 
-systems, from designing automated pipelines and cloud deployments to building 
-and benchmarking local LLM inference architectures. I combine academic rigor 
-with hands-on experience shipping end-to-end solutions across the full 
-development lifecycle. Eager to contribute to an engineering team at the 
-intersection of <strong>infrastructure, automation, and applied AI</strong>.            
+Motivated Computer Science student (3/4 year) with a strong foundation in
+<strong>Python, C++, and AI Systems</strong>. Passionate about
+<strong>DevOps practices</strong> and the operationalization of machine learning
+systems, from designing automated CI/CD pipelines and containerized cloud deployments
+to building and benchmarking local LLM inference architectures. I combine academic rigor
+with hands-on experience shipping end-to-end solutions across the full
+development lifecycle.</strong>.
             </p>
         </section>
-        
+
         <section class="education">
             <h2>Education</h2>
             <div class="job">
@@ -220,14 +227,14 @@ intersection of <strong>infrastructure, automation, and applied AI</strong>.
                 <p style="font-style: italic;">Focus: Data Structures, Algorithms, OOP, Operating Systems, Artificial Intelligence, Completed CCNA 1 & 2 curriculum</p>
             </div>
         </section>
-        
+
         <section class="skills">
             <h2>Technical Skills</h2>
             <ul>
                 <li><strong>Languages:</strong> C/C++, Python, SQL, HTML5/CSS3</li>
-                <li><strong>Frameworks & Libraries:</strong> QT Framework, Flask, TensorFlow, Keras, Scikit-learn, Arduino SDK</li>
-                <li><strong>Tools & Platforms:</strong> Git/GitHub, Azure Cloud, PostgreSQL, JetBrains Suite, AutoCAD</li>
-                <li><strong>Core Concepts:</strong> OOP, Data Structures, Embedded Systems, REST APIs, CI/CD Basics, Networking (TCP/IP, OSI Model, Subnetting)</li>
+                <li><strong>Frameworks & Libraries:</strong> ASP.NET Core, Angular, Entity Framework Core, QT Framework, Flask, TensorFlow, Keras, Scikit-learn, Arduino SDK</li>
+                <li><strong>Tools & Platforms:</strong> Git/GitHub, GitHub Actions, Docker, Docker Compose, Nginx, Nexus Repository, Linux, Azure Cloud, PostgreSQL, JetBrains Suite, AutoCAD</li>
+                <li><strong>Core Concepts:</strong> REST APIs, CI/CD Pipelines, Containerization, Multi-stage Builds, Container Registries, Infrastructure Automation, Networking (TCP/IP, OSI Model, Subnetting), OOP, Data Structures, Embedded Systems.</li>
                 <li><strong>Languages:</strong> Romanian (Native), English (B1/B2 - Independent User), Elementary French</li>
             </ul>
         </section>
@@ -238,12 +245,19 @@ intersection of <strong>infrastructure, automation, and applied AI</strong>.
             <div class="job">
                 <h3>Distributed Neuro-Symbolic Math Solver <strong>(AI/ML & Edge Computing)</strong> - <a href="https://github.com/dbogdanm/Neuro-Symbolic-Math-Solver" target="_blank">GitHub</a></h3>
             <p>
-                Built a hybrid AI pipeline combining a local <strong>DeepSeek R1 8B</strong> model with symbolic computation (SymPy) and RAG (ChromaDB) to solve mathematical problems. The edge-based system achieved <strong>100% accuracy on GSM8K</strong> and <strong>90.3% on MATH500</strong>, outperforming cloud-based DeepSeek 14B and matching Gemini 2.5 Flash.
+                Built a hybrid AI pipeline combining a local <strong>DeepSeek R1 8B</strong> model with symbolic computation (SymPy) and RAG (ChromaDB) to solve mathematical problems. The edge-based system achieved <strong>100% accuracy on GSM8K</strong> and <strong>90.3% on MATH500</strong>, matching cloud-based Gemini 2.5 Flash.
             </p>
                 <p><strong>Tech:</strong> Python, Ollama, SymPy, ChromaDB, RAG, Flask, LLM Orchestration, Multi-node HTTP Comunication</p>
             </div>
 
-            
+            <div class="job">
+                <h3>Online Course Platform - Full-Stack Platform with CI/CD Pipeline <strong>(DevOps & Cloud)</strong> <span class="private-tag">- Private repository (available on request)</span></h3>
+                <p>
+                    Designed and shipped a production-style <strong>CI/CD pipeline</strong> for a containerized <strong>.NET 10 + Angular 19</strong> application built on Clean Architecture. Implemented <strong>multi-stage Docker builds</strong>, a <strong>self-hosted GitHub Actions runner</strong> publishing images to a private <strong>Nexus Docker Registry</strong>, and automated SSH-based deployment to a Linux web server via <code>docker compose</code>. Separated dev/prod environments through Docker Compose overrides and centralized structured logging with Serilog.
+                </p>
+                <p><strong>Tech:</strong> Docker, Docker Compose, GitHub Actions (self-hosted), Nexus Repository, Nginx, .NET 10, ASP.NET Core, Angular 19, PostgreSQL, Linux/SSH</p>
+            </div>
+
             <div class="job">
                 <h3>Introduction to Robotics Repository <strong>(Embedded C++)</strong> - <a href="https://github.com/dbogdanm/IntroductionToRobotics" target="_blank">GitHub</a></h3>
                 <p>
@@ -322,7 +336,7 @@ intersection of <strong>infrastructure, automation, and applied AI</strong>.
                     <li>Assisted in the operational setup and procurement planning.</li>
                 </ul>
             </div>
-            
+
              <div class="job">
                 <span class="date">2020 - 2022</span>
                 <h3>Project Volunteer</h3>
