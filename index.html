@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CV of Dinu Bogdan-Marius">
-    <title>CV - Bogdan Dinu</title>
+    <meta name="description" content="CV of Bogdan-Marius Dinu">
+    <title>CV - Bogdan-Marius Dinu</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
@@ -197,8 +197,9 @@
 
     <div class="resume-container">
         <header>
-            <h1>Bogdan Dinu</h1>
+            <h1>Bogdan-Marius Dinu</h1>
             <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Bucharest, Romania</p>
                 <p><i class="fas fa-phone"></i> +40 763 378 294</p>
                 <p><i class="fas fa-envelope"></i> <a href="mailto:bogdandinu625@gmail.com">bogdandinu625@gmail.com</a></p>
                 <p><i class="fab fa-github"></i> <a href="https://github.com/dbogdanm" target="_blank">github.com/dbogdanm</a></p>
@@ -208,13 +209,12 @@
         <section class="summary">
             <h2>Professional Summary</h2>
             <p>
-Motivated Computer Science student (3/4 year) with a strong foundation in
-<strong>Python, C++, and AI Systems</strong>. Passionate about
-<strong>DevOps practices</strong> and the operationalization of machine learning
-systems, from designing automated CI/CD pipelines and containerized cloud deployments
-to building and benchmarking local LLM inference architectures. I combine academic rigor
-with hands-on experience shipping end-to-end solutions across the full
-development lifecycle.</strong>.
+Final-year Computer Science student (4/4) focused on <strong>DevOps and platform engineering</strong>.
+Hands-on experience designing <strong>CI/CD pipelines</strong> with Jenkins and GitHub Actions,
+containerizing and deploying multi-service applications with <strong>Docker and Docker Compose</strong>,
+and operating <strong>self-hosted Linux infrastructure</strong>: private registries, build agents,
+virtual machines and monitoring. Additional background in <strong>AI/ML</strong>, with a paper accepted
+at the <strong>KES 2026</strong> international conference.
             </p>
         </section>
 
@@ -224,31 +224,42 @@ development lifecycle.</strong>.
                 <span class="date">Oct 2023 - 2027(expected)</span>
                 <h3>University of Bucharest</h3>
                 <p><strong>B.Sc. in Computer Science</strong> | Faculty of Mathematics and Computer Science</p>
-                <p style="font-style: italic;">Focus: Data Structures, Algorithms, OOP, Operating Systems, Artificial Intelligence, Completed CCNA 1 & 2 curriculum</p>
+                <p><strong>GPA: 9.10 / 10</strong> | Academic year 2025-2026</p>
+                <p style="font-style: italic;">Focus: Operating Systems, Networking (CCNA 1 & 2 curriculum completed), Artificial Intelligence, Data Structures, Algorithms, OOP</p>
+            </div>
+        </section>
+
+        <!-- New Publications Section -->
+        <section class="publications">
+            <h2>Publications</h2>
+            <div class="job">
+                <span class="date">Accepted May 2026</span>
+                <h3>Beyond Arithmetic: The Semantic Bottleneck in Neuro-Symbolic LLMs</h3>
+                <p><strong>Authors:</strong> Bogdan-Marius Dinu, Ciprian-Mihai Ceausescu, Cristian-Hacic Kevorchian</p>
+                <p style="font-style: italic;">Accepted for publication and oral presentation at the 30th International Conference on Knowledge-Based and Intelligent Information &amp; Engineering Systems (KES 2026), Dublin, September 2026. <span class="private-tag">Full paper available on request.</span></p>
+                <ul>
+                    <li>Proposed a multi-agent distributed framework combining neuro-symbolic reasoning (DeepSeek-R1 8B + SymPy) with Semantic RAG to eliminate execution-level arithmetic hallucinations in edge-scale LLMs. Evaluated on benchmark subsets: GSM8K (21 problems), MATH500 (100), SVAMP (100), AIME 2025 (30).</li>
+                    <li>Identified the <strong>Semantic Bottleneck</strong>: once arithmetic is made deterministic, natural language understanding becomes the limiting factor (<strong>92%</strong> on competition-level MATH500 against <strong>64%</strong> on the linguistically adversarial SVAMP). On AIME 2025 the raw 8B baseline scored <strong>0%</strong> and the 14B model <strong>23.3%</strong>, while the same 8B model inside the pipeline reached <strong>66.6%</strong>, showing that structural augmentation beats parameter scaling at edge scale.</li>
+                </ul>
             </div>
         </section>
 
         <section class="skills">
             <h2>Technical Skills</h2>
             <ul>
-                <li><strong>Languages:</strong> C/C++, Python, SQL, HTML5/CSS3</li>
-                <li><strong>Frameworks & Libraries:</strong> ASP.NET Core, Angular, Entity Framework Core, QT Framework, Flask, TensorFlow, Keras, Scikit-learn, Arduino SDK</li>
-                <li><strong>Tools & Platforms:</strong> Git/GitHub, GitHub Actions, Docker, Docker Compose, Nginx, Nexus Repository, Linux, Azure Cloud, PostgreSQL, JetBrains Suite, AutoCAD</li>
-                <li><strong>Core Concepts:</strong> REST APIs, CI/CD Pipelines, Containerization, Multi-stage Builds, Container Registries, Infrastructure Automation, Networking (TCP/IP, OSI Model, Subnetting), OOP, Data Structures, Embedded Systems.</li>
-                <li><strong>Languages:</strong> Romanian (Native), English (B1/B2 - Independent User), Elementary French</li>
+                <li><strong>CI/CD & Automation:</strong> Jenkins (declarative Pipeline-as-Code, Multibranch Pipelines, Credentials Binding, tool management), GitHub Actions (self-hosted runners), Maven build lifecycle, Bash scripting, Git/GitHub</li>
+                <li><strong>Containers:</strong> Docker, Docker Compose, Dockerfile authoring, multi-stage builds, layer caching, volumes & persistence, healthchecks and startup ordering, image tagging and cleanup</li>
+                <li><strong>Artifacts & Registries:</strong> Nexus Repository (hosted Docker and artifact repos, Docker Bearer Token realm), self-hosted Docker Registry</li>
+                <li><strong>Infrastructure & Systems:</strong> Linux (Arch, Ubuntu), SSH and key management, systemd, Nginx, VM provisioning, TrueNAS/ZFS, Tailscale/WireGuard, Azure Cloud</li>
+                <li><strong>Networking:</strong> TCP/IP, OSI Model, Subnetting, DNS, reverse proxying, container networking; CCNA 1 & 2 curriculum</li>
+                <li><strong>Programming Languages:</strong> C/C++, Python, Groovy (Jenkinsfile), Bash, SQL, HTML5/CSS3</li>
+                <li><strong>Frameworks & Databases:</strong> ASP.NET Core, Angular, Flask, PostgreSQL, MongoDB</li>
+                <li><strong>Spoken Languages:</strong> Romanian (Native), English (Professional working proficiency), Elementary French</li>
             </ul>
         </section>
 
         <section class="projects">
-            <h2>Key Technical Projects</h2>
-
-            <div class="job">
-                <h3>Distributed Neuro-Symbolic Math Solver <strong>(AI/ML & Edge Computing)</strong> - <a href="https://github.com/dbogdanm/Neuro-Symbolic-Math-Solver" target="_blank">GitHub</a></h3>
-            <p>
-                Built a hybrid AI pipeline combining a local <strong>DeepSeek R1 8B</strong> model with symbolic computation (SymPy) and RAG (ChromaDB) to solve mathematical problems. The edge-based system achieved <strong>100% accuracy on GSM8K</strong> and <strong>90.3% on MATH500</strong>, matching cloud-based Gemini 2.5 Flash.
-            </p>
-                <p><strong>Tech:</strong> Python, Ollama, SymPy, ChromaDB, RAG, Flask, LLM Orchestration, Multi-node HTTP Comunication</p>
-            </div>
+            <h2>DevOps & Infrastructure Projects</h2>
 
             <div class="job">
                 <h3>Online Course Platform - Full-Stack Platform with CI/CD Pipeline <strong>(DevOps & Cloud)</strong> <span class="private-tag">- Private repository (available on request)</span></h3>
@@ -259,11 +270,38 @@ development lifecycle.</strong>.
             </div>
 
             <div class="job">
+                <h3>Jenkins CI Pipeline for a Java/Maven Application <strong>(DevOps)</strong> - <a href="https://github.com/dbogdanm/jenkins-build-test" target="_blank">GitHub</a></h3>
+                <p>
+                    Built a declarative <strong>Jenkins pipeline</strong> (Pipeline-as-Code, Jenkinsfile versioned in SCM) running on a self-hosted Linux VM. The pipeline runs Maven unit tests, packages the artifact, builds a Docker image through the mounted host Docker socket, and pushes it to a self-hosted <strong>Nexus Docker registry</strong>. Credentials are injected at runtime via Jenkins Credentials Binding and passed with <code>--password-stdin</code>, never exposed in process arguments. Configured as a <strong>Multibranch Pipeline</strong> with branch-conditional stages, so feature branches run tests only while <code>master</code> builds and publishes; stage-level <code>post</code> blocks handle image cleanup and registry logout.
+                </p>
+                <p><strong>Tech:</strong> Jenkins, Groovy, Maven, Docker, Nexus Repository, Git, Linux/SSH</p>
+            </div>
+
+            <div class="job">
+                <h3>Self-Hosted Home Lab &amp; Server Infrastructure <strong>(Infrastructure & Operations)</strong></h3>
+                <p>
+                    Operate a <strong>TrueNAS SCALE (ZFS)</strong> server hosting SMB shares, virtual machines and a stack of containerized services. Provisioned dedicated <strong>Ubuntu VMs</strong> as isolated build environments running Jenkins, a self-hosted <strong>Nexus registry</strong> and a self-hosted <strong>GitHub Actions runner</strong>. Built an alerting workflow that delivers a scheduled daily health report plus instant critical notifications to <strong>Telegram</strong>. Network services include <strong>AdGuard</strong> for DNS filtering, with remote access secured over a <strong>Tailscale (WireGuard)</strong> mesh network. Day-to-day work involves diagnosing storage, networking and permission issues across host and container boundaries.
+                </p>
+                <p><strong>Tech:</strong> TrueNAS SCALE/ZFS, Linux, Docker, Virtualization, Tailscale/WireGuard, AdGuard, SMB/CIFS, Bash, systemd, SSH</p>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Software & AI Projects</h2>
+
+            <div class="job">
+                <h3>Distributed Neuro-Symbolic Math Solver <strong>(AI/ML & Edge Computing)</strong> - <a href="https://github.com/dbogdanm/Neuro-Symbolic-Math-Solver" target="_blank">GitHub</a></h3>
+                <p>
+                    Built a hybrid AI pipeline combining a local <strong>DeepSeek R1 8B</strong> model with symbolic computation (SymPy) and RAG (ChromaDB) to solve mathematical problems. The edge-based system achieved <strong>100% accuracy on GSM8K</strong> and <strong>92% on MATH500</strong>, matching cloud-based Gemini 2.5 Flash.
+                </p>
+                <p><strong>Tech:</strong> Python, Ollama, SymPy, ChromaDB, RAG, Flask, LLM Orchestration, Multi-node HTTP Communication</p>
+            </div>
+
+            <div class="job">
                 <h3>Introduction to Robotics Repository <strong>(Embedded C++)</strong> - <a href="https://github.com/dbogdanm/IntroductionToRobotics" target="_blank">GitHub</a></h3>
                 <p>
-                    Developed a progressive portfolio of embedded systems projects using <strong>C++ and Arduino</strong>, ranging from analog signal processing and PWM control to complex applications involving <strong>Finite State Machines</strong>, hardware interrupts, and sensor integration.
+                    Portfolio of embedded systems projects in <strong>C++ and Arduino</strong>, from analog signal processing and PWM control to <strong>Finite State Machines</strong>, hardware interrupts and sensor integration.
                 </p>
-                <p><strong>Tech:</strong> C++, Arduino Uno, Circuit Design, Interrupts, I2C/SPI/Serial Communication</p>
             </div>
 
             <div class="job">
@@ -282,28 +320,8 @@ development lifecycle.</strong>.
                 <p><strong>Tech:</strong> Python, Flask, Azure Cloud, PostgreSQL, LLM Integration</p>
             </div>
 
-            <div class="job">
-                <h3>FleetManagement System <strong>(C++ OOP)</strong> - <a href="https://github.com/dbogdanm/QT-OOP" target="_blank">GitHub</a></h3>
-                <p>
-                    Designed a desktop application for logistics management using the QT Framework. The project emphasizes strict <strong>OOP</strong> principles.
-                </p>
-                <p><strong>Tech:</strong> C++, QT Framework, GUI Design</p>
-            </div>
         </section>
 
-        <!-- New Publications Section -->
-        <section class="publications">
-            <h2>Publications</h2>
-            <div class="job">
-                <span class="date">May 2026</span>
-                <h3>Beyond Arithmetic: The Semantic Bottleneck in Neuro-Symbolic LLMs</h3>
-                <p><strong>Authors:</strong> Bogdan-Marius Dinu, Ciprian-Mihai Ceausescu, Cristian-Hacic Kevorchian</p>
-                <p style="font-style: italic;">Accepted - 30th International Conference on Knowledge-Based and Intelligent Information & Engineering Systems (KES 2026)</p>
-                <ul>
-                    <li>Proposed a multi-agent distributed framework leveraging neuro-symbolic reasoning (DeepSeek-R1 8B + SymPy) and Semantic RAG to mitigate arithmetic hallucinations in edge-scale LLMs.</li>
-                </ul>
-            </div>
-        </section>
 
         <section class="work-experience">
             <h2>Professional Experience & Volunteering</h2>
@@ -321,29 +339,19 @@ development lifecycle.</strong>.
             <div class="job">
                 <span class="date">Nov 2023 - June 2024</span>
                 <h3>Administrative Assistant</h3>
-                <p><strong>MAGIC HEATING SYSTEM SRL</strong></p>
-                <ul>
-                    <li>Managed public acquisition plans and legal procurement procedures.</li>
-                    <li>Handled documentation for EU-funded projects (POCU measure 5.1).</li>
-                </ul>
+                <p><strong>MAGIC HEATING SYSTEM SRL</strong> | Public acquisition plans, procurement procedures and documentation for EU-funded projects (POCU 5.1).</p>
             </div>
 
             <div class="job">
                 <span class="date">Dec 2022 - Sept 2023</span>
                 <h3>Operations Support</h3>
-                <p><strong>NEW DIAMOND ROAD SERVICE SRL</strong></p>
-                <ul>
-                    <li>Assisted in the operational setup and procurement planning.</li>
-                </ul>
+                <p><strong>NEW DIAMOND ROAD SERVICE SRL</strong> | Operational setup and procurement planning.</p>
             </div>
 
-             <div class="job">
+            <div class="job">
                 <span class="date">2020 - 2022</span>
                 <h3>Project Volunteer</h3>
-                <p><strong>FORTES</strong></p>
-                <ul>
-                    <li>Supported the implementation of youth projects and EU-funded initiatives.</li>
-                </ul>
+                <p><strong>FORTES</strong> | Supported the implementation of youth projects and EU-funded initiatives.</p>
             </div>
         </section>
 
